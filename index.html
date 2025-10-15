@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cassino Online Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginContainer">
+  <h2>?? Cassino Online Demo - Login</h2>
+  <input type="text" id="username" placeholder="Usuário">
+  <input type="password" id="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div id="casinoContainer" style="display:none;">
+  <h1>?? Cassino Online Demo ??</h1>
+  <div id="balance">Saldo: 1000 créditos</div>
+  <div id="history"><h3>Histórico de apostas:</h3><ul></ul></div>
+
+  <!-- Slots -->
+  <div class="game">
+    <h2>?? Slots</h2>
+    <div id="slotsResult">- - -</div>
+    <button onclick="playSlots()">Jogar Slots (50 créditos)</button>
+  </div>
+
+  <!-- Roleta -->
+  <div class="game">
+    <h2>?? Roleta</h2>
+    <div id="rouletteResult">-</div>
+    <button onclick="playRoulette()">Girar Roleta (50 créditos)</button>
+  </div>
+
+  <!-- Blackjack -->
+  <div class="game">
+    <h2>?? Blackjack</h2>
+    <div id="blackjackResult">-</div>
+    <button onclick="playBlackjack()">Jogar Blackjack (50 créditos)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
